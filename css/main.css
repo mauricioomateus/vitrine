@@ -1,0 +1,77 @@
+:root {
+  --branco-alice: #f0f8ff;
+  --preto: #101010;
+  --quantum: #0d0c11;
+  --border-botao: rgb(134, 9, 9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--quantum);
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+}
+
+.first-name {
+  text-align: center;
+  width: 70%;
+  margin-right: 20%;
+}
+
+.titulo-principal {
+  color: var(--branco-alice);
+  font-size: 2.9em;
+  font: bold;
+  padding: 0;
+}
+
+.m {
+  color: rgb(209, 14, 14);
+  font: bold;
+}
+
+.job {
+  font-size: 1.2em;
+  color: var(--branco-alice);
+}
+
+.social-media {
+  padding-top: 10px;
+}
+
+.botao {
+  color: var(--branco-alice);
+  background-color: #101010;
+  width: 15%;
+  padding: 7px;
+  border-top-color: var(--border-botao);
+  border-left-color: var(--border-botao);
+  border-right-color: var(--border-botao);
+  border-bottom-color: var(--border-botao);
+  border-radius: 10px;
+}
+
+.foto-pessoal {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.border-imagem {
+  border-radius: 50%;
+  background-color: rgb(134, 9, 9);
+  width: 220px;
+  height: 220px;
+  margin-top: 50px;
+  margin-left: 10%;
+  padding: 2px;
+}
