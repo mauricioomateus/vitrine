@@ -58,6 +58,7 @@ body {
   border-right-color: var(--border-botao);
   border-bottom-color: var(--border-botao);
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .foto-pessoal {
@@ -74,4 +75,42 @@ body {
   margin-top: 50px;
   margin-left: 10%;
   padding: 2px;
+}
+
+.secao-sobre {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre {
+  color: var(--branco-alice);
+  text-align: justify;
+  width: 1000px;
+  margin: 0;
+}
+
+.sobre h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3.5em;
+  color: var(--branco-alice);
+}
+
+.sobre p {
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+
+.secao-projetos {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.projetos {
+  color: var(--branco-alice);
+  text-align: justify;
 }
