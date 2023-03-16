@@ -16,8 +16,9 @@
 
 body {
   background-color: var(--quantum);
-  height: 100vh;
+  /*height: 100vh;*/
   box-sizing: border-box;
+  color: var(--branco-alice);
 }
 
 .cabecalho {
@@ -26,9 +27,11 @@ body {
 }
 
 .first-name {
-  text-align: center;
   width: 70%;
   margin-right: 20%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-principal {
@@ -46,17 +49,19 @@ body {
 .job {
   font-size: 1.2em;
   color: var(--branco-alice);
+  text-align: center;
 }
 
 .social-media {
   display: flex;
   padding-top: 10px;
-  justify-content: space-between;
-  margin-left: 380px;
-  margin-right: 380px;
+  gap: 50px;
 }
 
 .social-media__botao {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
   color: var(--branco-alice);
   background-color: #2f2e2e00;
   text-align: center;
@@ -66,14 +71,19 @@ body {
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  font-size: 1.2em;
   text-decoration: none;
-  border: solid rgb(209, 14, 14);
-  border-width: 0.8px;
+  border: 1px solid rgb(209, 14, 14);
 }
 
 .social-media__botao:hover {
   background-color: rgba(166, 5, 5, 0.973);
   transition: 250ms linear;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }
 
 .foto-pessoal {
@@ -102,9 +112,12 @@ body {
 .sobre {
   color: var(--branco-alice);
   text-align: justify;
+  align-items: center;
   width: 1000px;
   margin: 0;
   font-family: 'Archivo', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .sobre h1 {
@@ -120,6 +133,27 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.secao-sobre__sobre__botoes {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10%;
+}
+
+.secao-sobre__sobre__botao {
+  color: var(--branco-alice);
+  background-color: #2f2e2e00;
+  text-align: center;
+  width: 150px;
+  padding: 7px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border: solid rgb(209, 14, 14);
+  border-width: 0.8px;
+}
+
 .secao-projetos {
   width: 100%;
   margin-top: 50px;
@@ -130,4 +164,13 @@ body {
 .projetos {
   color: var(--branco-alice);
   text-align: justify;
+}
+
+.rodape {
+  background-color: #101010;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
 }
