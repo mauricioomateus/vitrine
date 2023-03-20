@@ -24,6 +24,7 @@ body {
 .cabecalho {
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
 .first-name {
@@ -36,7 +37,7 @@ body {
 
 .titulo-principal {
   color: var(--branco-alice);
-  font-size: 2.9em;
+  font-size: 2.9rem;
   padding: 0;
   font-family: 'Prompt', sans-serif;
 }
@@ -47,12 +48,13 @@ body {
 }
 
 .job {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: var(--branco-alice);
   text-align: center;
 }
 
 .social-media {
+  width: 50%;
   display: flex;
   padding-top: 10px;
   gap: 50px;
@@ -65,13 +67,13 @@ body {
   color: var(--branco-alice);
   background-color: #2f2e2e00;
   text-align: center;
-  width: 150px;
+  width: 100%;
   padding: 7px;
   border-radius: 10px;
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
   border: 1px solid rgb(209, 14, 14);
 }
@@ -87,15 +89,15 @@ body {
 }
 
 .foto-pessoal {
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
 .border-imagem {
   border-radius: 50%;
   background-color: rgb(134, 9, 9);
-  width: 220px;
+  width: 13.5%;
   height: 220px;
   margin-top: 50px;
   margin-left: 10%;
@@ -123,12 +125,12 @@ body {
 .sobre h1 {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 3.5em;
+  font-size: 3.5rem;
   color: var(--branco-alice);
 }
 
 .sobre p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   margin-bottom: 30px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -173,4 +175,66 @@ body {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
+}
+
+@media (max-width: 1400px) {
+  .border-imagem {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1201px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  .border-imagem {
+    margin-left: 0;
+    width: 17%;
+    height: 170px;
+  }
+
+  .first-name {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .titulo-principal {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .border-imagem {
+    width: 19%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .border-imagem {
+    width: 25%;
+    height: 140px;
+  }
+}
+
+@media (max-width: 415px) {
+  .first-name {
+    flex-direction: column;
+  }
+
+  .social-media {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .sobre h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobre p {
+    margin: 0 5% 0 5%;
+  }
 }
