@@ -217,8 +217,14 @@ body {
     font-size: 1.2rem;
   }
 
+  .social-media {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .job {
-    font-size: 0.8;
+    font-size: 0.8rem;
   }
 
   .border-imagem {
@@ -226,20 +232,13 @@ body {
     height: 140px;
   }
 
+  .social-media__botao {
+    font-size: 1rem;
+    width: 80%;
+  }
+
   .sobre {
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 415px) {
-  .first-name {
-    flex-direction: column;
-  }
-
-  .social-media {
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 12px;
+    margin-top: 50px;
   }
 
   .sobre h1 {
@@ -248,9 +247,8 @@ body {
 
   .sobre p {
     margin: 0 5% 0 5%;
-  }
-
-  .border-imagem {
-    width: 29%;
+    font-size: 1.2rem;
   }
 }
+
+
