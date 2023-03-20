@@ -213,9 +213,21 @@ body {
 }
 
 @media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 1.2rem;
+  }
+
+  .job {
+    font-size: 0.8;
+  }
+
   .border-imagem {
-    width: 25%;
+    width: 29%;
     height: 140px;
+  }
+
+  .sobre {
+    margin-top: 100px;
   }
 }
 
@@ -236,5 +248,9 @@ body {
 
   .sobre p {
     margin: 0 5% 0 5%;
+  }
+
+  .border-imagem {
+    width: 29%;
   }
 }
